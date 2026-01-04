@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why I Created This Blog"
-date: 01-04-2026
+date: 2026-01-04
 ---
 
 ## My goal
