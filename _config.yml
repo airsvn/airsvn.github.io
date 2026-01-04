@@ -6,7 +6,7 @@ email: thanhttk134@gmail.com
 
 # Build settings
 markdown: kramdown
-permalink: /:day/:month/:year/:title/
+permalink: /:year/:month/:day/:title/
 
 # Exclude from processing
 exclude:
