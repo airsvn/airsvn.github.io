@@ -1,0 +1,15 @@
+# Site settings
+title: Amelia's Blog
+description: Foundational and cutting-edge research in artificial intelligence through clear insights and reproducible experiments.
+author: Amelia
+email: thanhttk134@gmail.com
+
+# Build settings
+markdown: kramdown
+permalink: /:day/:month/:year/:title/
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
