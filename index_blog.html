@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelia's Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        
+        .sidebar {
+            flex: 0 0 280px;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .main-content {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 40px;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            color: #0066cc;
+        }
+        
+        article {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        article:last-child {
+            border-bottom: none;
+        }
+        
+        article h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        
+        article h2 a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        article h2 a:hover {
+            color: #0066cc;
+        }
+        
+        .post-meta {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        
+        .post-content {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .read-more {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        .table-of-contents {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .table-of-contents h3 {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .table-of-contents ul {
+            list-style: none;
+        }
+        
+        .table-of-contents li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .table-of-contents li:last-child {
+            border-bottom: none;
+        }
+        
+        .table-of-contents a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .table-of-contents a:hover {
+            color: #0066cc;
+        }
+        
+        .table-of-contents span {
+            color: #999;
+            font-size: 0.85em;
+            display: block;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #999;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                position: static;
+                flex: 1;
+                width: 100%;
+            }
+            
+            header h1 {
+                font-size: 2em;
+            }
+            
+            article h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Amelia's Blog</h1>
+            <p>Thoughts, stories and ideas</p>
+        </header>
+        
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <section class="table-of-contents">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li>
+                            <a href="#post1">Getting Started with GitHub Pages</a>
+                            <span>Jan 4, 2026</span>
+                        </li>
+                        <li>
+                            <a href="#post2">Why I Started This Blog</a>
+                            <span>Jan 3, 2026</span>
+                        </li>
+                        <li>
+                            <a href="#post3">Hello World</a>
+                            <span>Jan 1, 2026</span>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+        
+            <main class="main-content">
+            <article id="post1">
+                <h2><a href="#post1">Getting Started with GitHub Pages</a></h2>
+                <div class="post-meta">January 4, 2026</div>
+                <div class="post-content">
+                    <p>Today I successfully set up my blog using GitHub Pages. It's surprisingly simple and completely free. GitHub Pages allows you to host static websites directly from your GitHub repository, making it perfect for personal blogs, portfolios, and project documentation.</p>
+                    <a href="#" class="read-more">Read more →</a>
+                </div>
+            </article>
+            
+            <article id="post2">
+                <h2><a href="#post2">Why I Started This Blog</a></h2>
+                <div class="post-meta">January 3, 2026</div>
+                <div class="post-content">
+                    <p>I've been thinking about starting a blog for a while now. A place where I can share my thoughts, document my learning journey, and connect with others who share similar interests. This blog is that place—a simple, clean space for writing and reflection.</p>
+                    <a href="#" class="read-more">Read more →</a>
+                </div>
+            </article>
+            
+            <article id="post3">
+                <h2><a href="#post3">Hello World</a></h2>
+                <div class="post-meta">January 1, 2026</div>
+                <div class="post-content">
+                    <p>Welcome to my blog! This is my first post, and I'm excited to begin this journey. I'll be sharing my experiences, lessons learned, and interesting discoveries along the way. Stay tuned for more content!</p>
+                    <a href="#" class="read-more">Read more →</a>
+                </div>
+            </article>
+        </main>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 Amelia's Blog. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
