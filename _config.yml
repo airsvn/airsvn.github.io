@@ -3,6 +3,7 @@ title: Amelia's Blog
 description: Foundational and cutting-edge research in artificial intelligence through clear insights and reproducible experiments.
 author: Amelia
 email: thanhttk134@gmail.com
+theme: minima
 
 # Build settings
 markdown: kramdown
